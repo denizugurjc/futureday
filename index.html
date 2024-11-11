@@ -1,0 +1,25 @@
+<!-- Sichtbar -->
+<body>
+  <h1>Jobcloud Todo</h1>
+  <h3>Please add some todos</h3>
+  <form onSubmit="onClickFun(event)">
+    <input id="input" />
+    <button type="submit">add</button>
+  </form>
+  <div id="list"></div>
+</body>
+<!-- host on github pages -->
+<!-- nicht sichtbar -->
+<script>
+  function onClickFun(event) {
+    event.preventDefault();
+    const list = document.getElementById("list");
+    const input = document.getElementById("input");
+
+    const p = document.createElement("p");
+    p.innerHTML = input.value;
+    list.appendChild(p);
+  }
+</script>
+
+<!-- bild, farbe,  -->
