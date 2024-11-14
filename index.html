@@ -1,18 +1,23 @@
 <!-- Sichtbar -->
 <body>
   <h1>Jobcloud Todo</h1>
-  <h3>Please add some todos</h3>
+  <h3>Please add some bananas</h3>
   <form onSubmit="onClickFun(event)">
     <input id="input" />
+
     <button type="submit">add</button>
   </form>
   <div id="list"></div>
+  <img
+    src="https://ih1.redbubble.net/image.4701968472.2273/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+  />
 </body>
-<!-- host on github pages -->
+
 <!-- nicht sichtbar -->
 <script>
   function onClickFun(event) {
     event.preventDefault();
+    alert("jobcloud toast-cats machen lustige sachen!!!");
     const list = document.getElementById("list");
     const input = document.getElementById("input");
 
@@ -22,4 +27,22 @@
   }
 </script>
 
-<!-- bild, farbe,  -->
+<style>
+  button {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 6%,
+      rgba(0, 212, 255, 1) 77%
+    );
+    color: pink;
+    width: 500px;
+    height: 100px;
+  }
+  img {
+    width: 100px;
+  }
+  body {
+    background-color: orange;
+  }
+</style>
